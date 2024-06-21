@@ -6,9 +6,13 @@
         <listener class-name="Utilites.ExtentManager"/>
     </listeners>
     <test verbose="2" preserve-order="true" name="D:/Intelli workspace/POMwithTestNG/test-output">
-        <classes>
+       <classes>
             <class name="DemoblazeTest.BaseTest"/>
-            <class name="DemoblazeTest.MainTest"/>
-        </classes>
+            <class name="DemoblazeTest.MainTest">
+                <methods>
+                    <include name="testSignup"/>
+                    <include name="testLogin"/>
+                </methods>
+            </class>
     </test>
 </suite>
